@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+header .logo {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+/* the nav goes here:-*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:rgb(29, 40, 58); /*fixed bg color*/
+}
+nav a {
+    position: relative;
+    font-size: 1.1em;
+    font-weight: 500;
+    color:#333;
+    text-decoration: none;
+    padding:6px 20px;
+    transition: 0.5s;
+} 
+nav a:hover{
+    color:#ffc107;
+}
+nav a span{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    border-bottom: 2px solid #ffc107;
+    border-radius:15px;
+    transform:scale(0) translateY(50px);/*fixed typo in translateY*/
+    opacity: 0;
+    transition:0.5s ;
+}
+nav a:hover span{
+    transform:scale(1) translateY(0);
+    opacity: 1;
+}
+
+/*the navbar style ends here*/
+
+main {
+    padding: 100px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+section p {
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+section button {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+section button:hover {
+    cursor:pointer;
+    background-color: #e0b90f;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+}
+
+section form input,
+section form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+section form button {
+    margin-top: 10px;
+}
+
+@media (max-width: 992px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    main {
+        padding: 50px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    section form input,
+    section form textarea {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 20px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p {
+        font-size: 0.9rem;
+    }
+
+    section form input,
+    section form textarea {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        padding: 10px 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+    @media (max-width: 576px) {
+        header {
+            padding: 10px 10px;
+        }
+    
+        main {
+            padding: 10px;
+        }
+    
+        section h2 {
+            font-size: 1.2rem;
+        }
+    
+        section p {
+            font-size: 0.8rem;
+        }
+    
+        section form input,
+        section form textarea {
+            padding: 5px;
+        }
+    
+        section ul {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        section ul li {
+            padding: 10px 0;
+        }
+    
+        section ul li a {
+            font-size: 0.9rem;
+        }
+    }
+    
+    footer {
+        background-color: #fff;
+        padding: 20px;
+        text-align: center;
+        color: #333;
+        margin-top: 50px;
+    }
+    
+    footer p {
+        margin-bottom: 0;
+    }
+    
+    footer a {
+        color: #ffc107;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    
+    footer a:hover {
+        color: #e0b90f;
+    }
+}
+.service{
+    font-style:oblique;
+    color:whitesmoke;
+    transition: all ease 0.5s;
+}
+
+.service:hover{
+    color:#ffc107;
+    text-shadow: 0px 0px 10px #e0b90f ;
+}
+.insta{
+    transition: all ease 0.5s;
+}
+.insta:hover{
+   
+    transform:scale(1.1);
+    filter:drop-shadow(0px 0px 10px rgb(197, 50, 238));
+}
+.fb{
+    transition: all ease 0.5s;
+
+}
+.fb:hover{
+    transform:scale(1.1);
+    filter:drop-shadow(0px 0px 10px rgb(2, 2, 248));
+}
+.login{
+    color:rgb(29, 40, 58);
+    width: 60px;
+    height:40px;
+    background-image: linear-gradient(to right, #ee0979, #ff6a00);
+    border-radius:5px;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+}
+.login:hover{
+    color:#e0b90f;
+    cursor: pointer;
+    background-position: left bottom;
+    transition: background-position 0.5s ease-in;
+
+}
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+  }
+.btn-grad {
+    display: inline-block;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size: 12px;
+    height:45px;
+    width: 145px;
+    border:solid 1px #ff6a00;
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+    background-image: linear-gradient(to right, #ee0979, #ff6a00);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+  }
+  
+  .btn-grad:hover {
+    background-position: left bottom;
+    transition: background-position 0.5s ease-in;
+  }
+  button, input[type="button"], input[type="reset"], input[type="submit"] {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+  }
+  .head{
+      flex-direction: row;
+      display: flex ;
+      align-items: baseline;
+  }
+  .geek{
+      padding-top: 95px;
+  }
+
+  .img-pro{
+      padding-top:5px;
+      height:20px;
+  }
